@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Drag an Drop</title>
+        <link rel="stylesheet" type="text/css" href=src/css/main.css>
+    </head>
+    <body>
+        <!--<div id="drag" draggable="true">
+
+        </div>
+        <a href="#" draggable="false">Link</a>
+        <img draggable="false" src="src/img/gato.jpg" />-->
+        <script src ="src/js/main.js"></script>
+        <table>
+            <tr>
+                <th>onDrag</th>
+                <th>onDragStart</th>
+                <th>onDragEnter</th>
+                <th>onDragLeave</th>
+                <th>onDragOver</th>
+                <th>onDragEnd</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <img id="img1" src="src/img/gato.jpg" ondrag="miOnDrag(event)"/>
+                </td>
+                <td>
+                    <img id="img2" src="src/img/gato.jpg" ondragstart="miOnDragStart(event)"/>
+                </td>
+                <td>
+                    <img id="img3" src="src/img/gato.jpg" ondragenter="miOnDragEnter(event)"/>
+                </td>
+                <td>
+                    <img id="img4" src="src/img/gato.jpg" ondragleave="miOnDragLeave(event)"/>
+                </td>
+                <td>
+                    <img id="img5" src="src/img/gato.jpg" ondragover="miOnDragOver(event)"/>
+                </td>
+                <td>
+                    <img id="img6" src="src/img/gato.jpg" ondragend="miOnDragEnd(event)"/>
+                </td>
+            </tr>
+        </table>
+        <div id="reproductor" ondragover="miOnDragOver(event)" ondrop="miOnDrop(event)"></div>
+    </body>
+</html>
